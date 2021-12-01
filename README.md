@@ -36,6 +36,12 @@ $ cd /opt/nvidia/deepstream/deepstream-5.1/sources/apps/sample_apps/deepstream-t
 $ deepstream-test1-app /opt/nvidia/deepstream/deepstream/samples/streams/sample_720p.h264
 ```
 
+## Webcam streaming
+```bash
+$ conda deactivate
+$ gst-launch-1.0 v4l2src ! xvimagesink # Plays webcam
+$ 
+
 ## All steps
 1. cd ~/Downloads
 2. tar xzvf TensorRT-7.2.3.4.Ubuntu-18.04.x86_64-gnu.cuda-11.1.cudnn8.1.tar.gz
